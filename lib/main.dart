@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("Dimas a"),
+            Text("Dimas aa"),
             Text("Anjay"),
             Text("Mabar Profesional"),
             Row(
