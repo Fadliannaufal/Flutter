@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -10,23 +12,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Row dan colummn"),
+          title: Text("Latihan Text Style"),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text("Dimas aa"),
-            Text("Anjay"),
-            Text("Mabar Profesional"),
-            Row(
-              children: <Widget>[
-                Text("Dimas"),
-                Text("Anjay"),
-                Text("Mabar Profesional")
-              ],
-            )
-          ],
+        body: Center(
+          child: Text(
+            "Ini adalah Text",
+            style: TextStyle(
+                fontFamily: "CrashLandingBB",
+                fontStyle: FontStyle.italic,
+                fontSize: 30,
+                decoration: TextDecoration.overline,
+                decorationColor: Colors.red,
+                decorationThickness: 5,
+                decorationStyle: TextDecorationStyle.wavy),
+          ),
         ),
       ),
     );
